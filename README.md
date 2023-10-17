@@ -80,3 +80,20 @@ db.collectionName.updateMany(
     { update: { $set: { field1: value1, field2: value2, ... } } }
 )
 ```
+## Delete Documents Using `deleteOne` and `deleteMany`
+To remove documents from a MongoDB collection, you can use the `deleteOne` and `deleteMany` commands in the MongoDB shell.
+
+### Using `deleteOne`
+To delete a single document in a collection, you can use the `deleteOne` command:
+```
+db.collectionName.deleteOne(
+    { key: value }
+)
+```
+### Using `deleteMany`
+To delete multiple documents in a collection, you can use the deleteMany command:
+```
+db.collectionName.deleteMany(
+    { key: value }
+)
+```
