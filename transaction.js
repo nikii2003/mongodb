@@ -18,5 +18,37 @@ db.transaction.insertOne({
 //command of insertMany in transaction collection
 
 db.transaction.insertMany(
-
+    [
+{
+    "_id": 3,
+    "user_id": 789,
+    "amount": 1000,
+    "type": "credit"
+ 
+},
+{
+    "_id": 4,
+    "user_id": 123,
+    "amount": 300,
+    "type": "debit",
+   
+},
+{
+    
+        "_id": 5,
+        "user_id": 456,
+        "amount": 700,
+        "type": "credit",
+     
+      
+},
+{
+    "_id" : 6,
+    "user_id": 764,
+    "amount" :800,
+    "type":"credit",
+    
+ 
+}
+    ]
 )

@@ -1,17 +1,19 @@
 ## What is MongoDB ?
+
 MongoDB is an Open source, document-oriented NoSQL database Management System.
 
 ## why MongoDB ?
+
 Design for flexibility,scalability and performance in handling unstructured or semi- structured data.
 
-##  MongoDB Command and Usage 
+## MongoDB Command and Usage
 
 **Connect to MongoDB:**
-  Use the `mongo` shell to connect to a MongoDB server:
-  MONGOSH
+Use the `mongo` shell to connect to a MongoDB server:
+MONGOSH
 
 **Check Databases:**
-If you want to check the databases use the `show dbs` command.  
+If you want to check the databases use the `show dbs` command.
 
 **Create a Database:**
 To create a new database , use the `use` command .
@@ -24,7 +26,9 @@ Update : 'updateOne', 'updateMany'<br>
 Delete : 'deleteOne','deleteMany'<br>
 
 ## Insert a Document Using `insertOne`
+
 To insert a single document into a MongoDB collection, you can use the `insertOne` command in the MongoDB shell.<br>
+
 ```
 db.collectionName.insertOne(
     {
@@ -36,6 +40,7 @@ db.collectionName.insertOne(
 ```
 
 ## Insert Multiple Document Using `insertMany`
+
 To insert a multiple document into a MongoDB collection, you can use the `insertMany` command in the MongoDB shell.<br>
 
 ```
@@ -50,11 +55,15 @@ db.collectionName.insertMany([
     }
 ])
 ```
+
 ### Using `find`
+
 To retrieve documents from a MongoDB collection, you can use the `find` command
 
 ### Using `findOne`
+
 To find a single document in a collection, you can use the 'findOne' command:
+
 ```
 db.collectionName.findOne(
     { key: value },
@@ -65,33 +74,45 @@ db.collectionName.findOne(
 ## Update Documents Using `updateOne` and `updateMany`
 
 ### Using `updateOne`
+
 To update a single document in a collection, you can use the `updateOne` command:
+
 ```
 db.collectionName.updateOne(
     { filter: { key: value } },
     { update: { $set: { field1: value1, field2: value2, ... } } }
 )
 ```
+
 ### Update `updateMany`
+
 To update multiple documents in a collection, you can use the updateMany command:
+
 ```
 db.collectionName.updateMany(
     { filter: { key: value } },
     { update: { $set: { field1: value1, field2: value2, ... } } }
 )
 ```
+
 ## Delete Documents Using `deleteOne` and `deleteMany`
+
 To remove documents from a MongoDB collection, you can use the `deleteOne` and `deleteMany` commands in the MongoDB shell.
 
 ### Using `deleteOne`
+
 To delete a single document in a collection, you can use the `deleteOne` command:
+
 ```
 db.collectionName.deleteOne(
     { key: value }
 )
 ```
+
 ### Using `deleteMany`
+
 To delete multiple documents in a collection, you can use the deleteMany command:
+
 ```
 db.collectionName.deleteMany(
     { key: value }
