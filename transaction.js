@@ -1,3 +1,5 @@
+// command of insertOne in transaction collection
+
 db.transaction.insertOne({
     'id' :1,
     'user-ID' : 123,
@@ -12,3 +14,9 @@ db.transaction.insertOne({
     "type": "debit",
     "timestamp": ISODate("2023-10-17T11:15:00Z")
 })
+
+//command of insertMany in transaction collection
+
+db.transaction.insertMany(
+
+)
