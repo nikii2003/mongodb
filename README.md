@@ -50,3 +50,33 @@ db.collectionName.insertMany([
     }
 ])
 ```
+### Using `find`
+To retrieve documents from a MongoDB collection, you can use the `find` command
+
+### Using `findOne`
+To find a single document in a collection, you can use the 'findOne' command:
+```
+db.collectionName.findOne(
+    { key: value },
+    { projection: { field1: 1, field2: 1, ... } }
+)
+```
+
+## Update Documents Using `updateOne` and `updateMany`
+
+### Using `updateOne`
+To update a single document in a collection, you can use the `updateOne` command:
+```
+db.collectionName.updateOne(
+    { filter: { key: value } },
+    { update: { $set: { field1: value1, field2: value2, ... } } }
+)
+```
+### Update `updateMany`
+To update multiple documents in a collection, you can use the updateMany command:
+```
+db.collectionName.updateMany(
+    { filter: { key: value } },
+    { update: { $set: { field1: value1, field2: value2, ... } } }
+)
+```
